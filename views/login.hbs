@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn page</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="css/loginPage.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/Register">Registration</a></li>
+        </ul>
+    </nav>
+
+    <h2>LOGIN</h2>
+
+    <div class="login_container">
+
+        <img class="profile_img" src="/images/login.jpg" alt="">
+
+        <form class="form_signin" action="/login" method="POST">
+            <input type="text" class="form_control" placeholder="Email" required name="email">
+            <input type="password" class="form_control" placeholder="password" required name="password">
+
+            <button class="loginBtn" type="submit">Sign in</button>
+
+            <label class="loginCheckbox">
+                <input type="checkbox" value="remember-me">
+                Remember me
+            </label>
+            <a href="#">Need help?</a>
+        </form>
+
+        <a href="/register">Create an account</a>
+    </div>
+</body>
+
+</html>
